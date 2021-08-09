@@ -14,36 +14,38 @@
     <input type="text" id="search" name="search" placeholder="Search">
     <label for="search">🔎</label>
 
-    <table id="list">
-        <thead>
-            <tr>
-                <th>Group</th>
-                <th>Members</th>
-                <th>Project Name</th>
-                <th>Project URL</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>grup1</td>
-                <td>Nume Prenume</td>
-                <td>proiect</td>
-                <td>Github</td>
-                <td>✕ ✎</td>
-            </tr>
+    <form onsubmit="return submitTeam()">
+        <table id="list">
+            <thead>
+                <tr>
+                    <th>Group</th>
+                    <th>Members</th>
+                    <th>Project Name</th>
+                    <th>Project URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>grup1</td>
+                    <td>Nume Prenume</td>
+                    <td>proiect</td>
+                    <td>Github</td>
+                    <td>✕ ✎</td>
+                </tr>
 
-        </tbody>
-        <tfoot>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" required name="group" placeholder="Group"></td>
+                    <td><input type="text" required name="members" placeholder="Members"></td>
+                    <td><input type="text" required name="name" placeholder="Name"></td>
+                    <td><input type="text" required name="url" placeholder="URL"></td>
+                    <td><button type="submit">Save</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
     <script src="functions.js"></script>
 </body>
 
