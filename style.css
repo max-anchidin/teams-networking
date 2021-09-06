@@ -16,3 +16,14 @@
 #search {
     margin-bottom: 0.5em;
 }
+
+button {
+    padding: 0 2px;
+}
+ 
+button[type=submit]{
+    color: green;
+}
+button[type=reset]{
+    color: blue;
+}
