@@ -33,7 +33,7 @@ function getTeamsAsHTML(teams, search) {
 
 function displayTeams(teams) {
     const search = document.getElementById("search").value.toLowerCase();
-    const html = getTeamsAsHTML(teams);
+    const html = getTeamsAsHTML(teams, search);
     document.querySelector('#list tbody').innerHTML = html;
 }
 
