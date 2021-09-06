@@ -27,3 +27,7 @@ button[type=submit]{
 button[type=reset]{
     color: blue;
 }
+
+.highlight {
+    background-color: yellowgreen;
+}
